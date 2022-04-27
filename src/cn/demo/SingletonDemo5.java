@@ -1,25 +1,18 @@
 package cn.demo;
 
 /**
- * Ë«ÖØ¼ì²âËøµ¥ÀıÄ£Ê½
+ * åŒæ£€é”å•ä¾‹æ¨¡å¼
  * @author Miao
  *
  */
 public class SingletonDemo5 {
-	private static SingletonDemo5 instance = null;
+	private static volatile SingletonDemo5 instance;
 	
 	public static SingletonDemo5 getInstance() {
 		if(instance == null) {
-			SingletonDemo5 sc;
 			synchronized (SingletonDemo5.class) {
-				sc = instance;
-				if(sc == null) {
-					synchronized (SingletonDemo5.class) {
-						if(sc == null) {
-							sc = new SingletonDemo5();
-						}
-					}
-					instance = sc;
+				if(instance == null) {
+					instance = new SingletonDemo5();
 				}
 			}
 		}
