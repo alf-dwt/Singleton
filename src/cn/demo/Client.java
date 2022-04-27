@@ -7,9 +7,9 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 /**
- * ÀûÓÃ·´Éä»òĞòÁĞ»¯ÆÆ½âµ¥ÀıÄ£Ê½µÄ·½·¨
+ * åˆ©ç”¨åå°„æˆ–åºåˆ—åŒ–ç ´è§£å•ä¾‹æ¨¡å¼çš„æ–¹æ³•
  * @author Miao
- *
+ * è¯´æ˜SingletonDemo6ä¸SingletonDemo1é‡å¤ï¼Œå·²è¢«åˆ é™¤ã€‚
  */
 public class Client {
 
@@ -20,14 +20,14 @@ public class Client {
 		System.out.println(s1);
 		System.out.println(s2);
 		
-		//ÀûÓÃ·´ÉäÆÆ½âµ¥Àı
+		//åˆ©ç”¨åå°„ç ´è§£å•ä¾‹
 //		Class<SingletonDemo6> clazz = (Class<SingletonDemo6>) Class.forName("cn.demo.SingletonDemo6");
 //		Constructor<SingletonDemo6> c = (Constructor<SingletonDemo6>) clazz.getDeclaredConstructor(null);
 //		c.setAccessible(true);
 //		SingletonDemo6 s3 = c.newInstance();
 //		SingletonDemo6 s4 = c.newInstance();
 		
-		//ÀûÓÃ·´ĞòÁĞ»¯ÆÆ½âµ¥Àı
+		//åˆ©ç”¨ååºåˆ—åŒ–ç ´è§£å•ä¾‹
 		File file = new File("e:\\temp\\a.txt");
 		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
 		oos.writeObject(s1);
