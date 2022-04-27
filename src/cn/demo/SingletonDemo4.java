@@ -1,15 +1,11 @@
 package cn.demo;
 
 /**
- * Ã¶¾ÙÀàĞÍµ¥ÀıÄ£Ê½
+ * ç”¨æšä¸¾åˆ›å»ºå•ä¾‹
  * @author Miao
  *
  */
 public enum SingletonDemo4 {
 	
-	INSTANCE; //Ã¶¾ÙÀàĞÍ¶¼ÊÇµ¥ÀıÄ£Ê½
-	
-	public void operation(){
-		//do something ...
-	}
+	INSTANCE; 
 }
